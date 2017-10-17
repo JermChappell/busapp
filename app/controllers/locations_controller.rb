@@ -10,7 +10,7 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
-    source_url = http://developer.itsmarta.com/BRDRestService/RestBusRealTimeService/GetAllBus
+    source_url = "http://developer.itsmarta.com/BRDRestService/RestBusRealTimeService/GetAllBus"
     
     @buses = fetch_buses_from_api(source_url)
     
