@@ -16,3 +16,4 @@ module LocationsHelper
             distance <= max_distance
     end
 end
+end

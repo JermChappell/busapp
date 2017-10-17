@@ -17,6 +17,7 @@ class LocationsController < ApplicationController
     @buses.select! do |bus|
       is_nearby?(@location.latitude, @location.longitude, bus["LATITUDE"], bus["LONGITUDE"])
   end
+end
 
   # GET /locations/new
   def new
